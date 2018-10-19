@@ -1,9 +1,22 @@
-var i: number;
-var i: number = 10;
+// enum Signal {
+//     Red = 0,
+//     Blue = 1,
+//     Yellow = 2
+// }
 
-var x;
-x = 10;
-x = "hello";
+enum Signal {
+    Red,
+    Blue = 3,
+    Yellow
+}
 
-var results: number[];
-results = [1, 2, 3];
+enum Signal {
+    Green = 4
+}
+
+var result: Signal;
+
+console.log(Signal.Yellow);
+console.log(Signal[4]);
+console.log(Signal.Red);
+console.log(Signal);

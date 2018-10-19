@@ -1,6 +1,5 @@
-var User = /** @class */ (function () {
-    function User() {
-    }
-    return User;
-}());
-console.log("hello world");
+var x = 10;
+x = "hello";
+// class User {
+// }
+// console.log("hello world");

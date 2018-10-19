@@ -1,5 +1,8 @@
-class User {
+var x: number = 10;
+x = "hello";
 
-}
+// class User {
 
-console.log("hello world");
+// }
+
+// console.log("hello world");

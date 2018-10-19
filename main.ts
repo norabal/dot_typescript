@@ -1,22 +1,15 @@
-// enum Signal {
-//     Red = 0,
-//     Blue = 1,
-//     Yellow = 2
+// function add(a: number, b: number): number {
+//     return a + b;
 // }
 
-enum Signal {
-    Red,
-    Blue = 4,
-    Yellow
+// console.log(add(5, 3));
+// console.log(add(5, "hi"));
+
+function add(a: number, b?: string): string {
+    console.log(a);
+    console.log(b);
+
+    return a + b;
 }
 
-enum Signal {
-    Green = 8
-}
-
-var result: Signal;
-
-console.log(Signal.Yellow);
-console.log(Signal[4]);
-console.log(Signal.Red);
-console.log(Signal);
+console.log(add(5, "hello"));

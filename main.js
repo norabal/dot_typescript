@@ -1,20 +1,12 @@
-// enum Signal {
-//     Red = 0,
-//     Blue = 1,
-//     Yellow = 2
+// function add(a: number, b: number): number {
+//     return a + b;
 // }
-var Signal;
-(function (Signal) {
-    Signal[Signal["Red"] = 0] = "Red";
-    Signal[Signal["Blue"] = 4] = "Blue";
-    Signal[Signal["Yellow"] = 5] = "Yellow";
-})(Signal || (Signal = {}));
-(function (Signal) {
-    Signal[Signal["Green"] = 8] = "Green";
-})(Signal || (Signal = {}));
-var result;
-console.log(Signal.Yellow);
-console.log(Signal[4]);
-console.log(Signal.Red);
-console.log(Signal);
+// console.log(add(5, 3));
+// console.log(add(5, "hi"));
+function add(a, b) {
+    console.log(a);
+    console.log(b);
+    return a + b;
+}
+console.log(add(5, "hello"));
 //# sourceMappingURL=main.js.map

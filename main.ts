@@ -6,12 +6,12 @@
 
 enum Signal {
     Red,
-    Blue = 3,
+    Blue = 4,
     Yellow
 }
 
 enum Signal {
-    Green = 4
+    Green = 8
 }
 
 var result: Signal;

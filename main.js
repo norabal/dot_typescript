@@ -1,5 +1,7 @@
-var x = 10;
+var i;
+var i = 10;
+var x;
+x = 10;
 x = "hello";
-// class User {
-// }
-// console.log("hello world");
+var results;
+results = [1, 2, 3];

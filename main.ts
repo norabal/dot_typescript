@@ -1,8 +1,9 @@
-var x: number = 10;
+var i: number;
+var i: number = 10;
+
+var x;
+x = 10;
 x = "hello";
 
-// class User {
-
-// }
-
-// console.log("hello world");
+var results: number[];
+results = [1, 2, 3];

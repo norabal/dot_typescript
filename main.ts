@@ -1,6 +1,13 @@
-/// <reference path="./user.ts" />
+// 外部モジュール
 
-console.log(UserModule.name);
+// Node - CommonJS
+// RequireJS - AMD
 
-import addr = UserModule.AddressModule;
-console.log(addr.zip);
+// module UserModule {
+//     export var name = "taguchi";
+// }
+
+// import User = require("./user_commonjs");
+import User = require("./user_amd");
+
+console.log(User.name);

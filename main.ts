@@ -1,12 +1,18 @@
-function add(a: number, b: number): number;
-function add(a: string, b: string): string;
-
-function add(a: any, b: any): any {
-    if (typeof a === "string" && typeof b === "string") {
-        return a + " " + b;
+class User{
+    // public name: string;
+    // constructor(name: string){
+    //     this.name = name;
+    // }
+    constructor(
+        public name: string,
+        public gender: string
+    ){
     }
-    return a + b;
+    sayHi(): void{
+        console.log("Hi! I am " + this.name);
+    }
 }
 
-// console.log(add(5, 3));
-console.log(add("hello", "world"));
+let tom = new User("Tom", "male");
+console.log(tom.name, tom.gender);
+tom.sayHi();

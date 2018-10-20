@@ -1,18 +1,8 @@
-// インターフェース
+// Generics
 
-interface Result {
-    a: number;
-    b: number;
+function getArray<T>(value: T): T[] {
+    return [value, value, value];
 }
 
-function getTotal(result: Result) {
-    return result.a + result.b;
-}
-
-var result = {
-    a: 32,
-    b: 58,
-    c: 32,
-};
-
-console.log(getTotal(result));
+console.log(getArray<number>(3));
+console.log(getArray<string>("hello"));

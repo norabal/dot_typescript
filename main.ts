@@ -1,30 +1,18 @@
-class User{
-    // public name: string;
-    // constructor(name: string){
-    //     this.name = name;
-    // }
-    constructor(
-        public name: string,
-        private _gender: string) {
-    }
-    sayHi(): void{
-        console.log("Hi! I am " + this.name + ", " + this.gender + ".");
-    }
+// インターフェース
 
-    get gender() {
-        return this._gender;
-    }
-
-    set gender(newValue: string) {
-        console.log(this.name + " made a big decision...");
-        this._gender = newValue;
-    }
+interface Result {
+    a: number;
+    b: number;
 }
 
-let tom = new User("Tom", "male");
-// console.log(tom.name + ' is ' + tom.gender);
-tom.sayHi();
+function getTotal(result: Result) {
+    return result.a + result.b;
+}
 
-tom.gender = 'female';
+var result = {
+    a: 32,
+    b: 58,
+    c: 32,
+};
 
-tom.sayHi();
+console.log(getTotal(result));

@@ -1,15 +1,12 @@
-// function add(a: number, b: number): number {
-//     return a + b;
-// }
+function add(a: number, b: number): number;
+function add(a: string, b: string): string;
 
-// console.log(add(5, 3));
-// console.log(add(5, "hi"));
-
-function add(a: number, b?: string): string {
-    console.log(a);
-    console.log(b);
-
+function add(a: any, b: any): any {
+    if (typeof a === "string" && typeof b === "string") {
+        return a + " " + b;
+    }
     return a + b;
 }
 
-console.log(add(5, "hello"));
+// console.log(add(5, 3));
+console.log(add("hello", "world"));
